@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="display: flex">
+      <form
+        style="
+          display: flex;
+          flex-direction: column;
+          justify-items: center;
+          gap: 10px;
+        "
+        id="profile-form"
+        method="post"
+        action="/profiles/create"
+      >
+        <h1>ข้อมูลผู้เรียน</h1>
+        <label for="username">ชื่อผู้ใช้</label>
+        <input
+          id="username"
+          name="username"
+          type="text"
+          placeholder="เช่น sara_dev"
+          required
+        />
+        <label for="track">สายการเรียน</label>
+        <select id="track" name="track" required>
+          <option value="">เลือกสายการเรียน</option>
+          <option value="frontend">Frontend</option>
+          <option value="backend">Backend</option>
+          <option value="fullstack">Fullstack</option>
+        </select>
+        <label for="about">แนะนำตัว</label>
+        <textarea
+          id="about"
+          name="about"
+          placeholder="บอกเป้าหมายการเรียนของคุณ"
+          required
+        ></textarea>
+        <button type="submit">บันทึกโปรไฟล์</button>
+      </form>
+    </div>
+  </body>
+</html>
