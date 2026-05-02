@@ -6,7 +6,8 @@
     <title>Document</title>
   </head>
   <body>
-    <div style="display: flex">
+    <h1 style="text-align: center">ข้อมูลผู้เรียน</h1>
+    <div style="display: flex; justify-content: center">
       <form
         style="
           display: flex;
@@ -18,7 +19,6 @@
         method="post"
         action="/profiles/create"
       >
-        <h1>ข้อมูลผู้เรียน</h1>
         <label for="username">ชื่อผู้ใช้</label>
         <input
           id="username"
@@ -44,5 +44,9 @@
         <button type="submit">บันทึกโปรไฟล์</button>
       </form>
     </div>
+    <nav style="display: flex; justify-content: center; gap: 20px">
+      <a href="index.html">ย้อนกลับ</a>
+      <a href="workshop3.html">หน้าถัดไป</a>
+    </nav>
   </body>
 </html>
